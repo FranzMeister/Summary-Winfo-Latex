@@ -1,1 +1,8 @@
-Einführung in die Wirtschaftsinformatik Zusammenfassung
+# Einführung in die Wirtschaftsinformatik Zusammenfassung
+
+Features
+- [ ] :camel:
+- [ ] decent hotlinking
+- [x] title
+- [ ] index
+- [ ] etc.
