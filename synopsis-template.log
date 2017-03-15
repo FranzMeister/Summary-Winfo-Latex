@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  15 MAR 2017 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  15 MAR 2017 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,14 +694,8 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 88.
-
-
-LaTeX Warning: Hyper reference `le1-5' on page 1 undefined on input line 95.
-
-
-LaTeX Warning: Hyper reference `le1-6' on page 1 undefined on input line 96.
-
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 102.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
@@ -729,34 +723,41 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 167.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
+Underfull \hbox (badness 2285) in paragraph at lines 211--212
+[]\OT1/ppl/b/n/10 rechnergest^^?utztes IS: \OT1/ppl/m/n/10 ba-siert und Ein-sat
+z von In-for-ma-ti-ons-tech-nik
  []
 
-[3] [4]
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+[][][]\OT1/ppl/m/it/10 Sie ken-nen die wich-tig-sten tech-ni-schen Ent-wick-lun
+gs-li-ni-en Ka-pa-
+ []
 
-LaTeX Warning: Citation `bardram' on page 5 undefined on input line 290.
+[4] [5]
+
+LaTeX Warning: Citation `bardram' on page 6 undefined on input line 335.
 
 No file synopsis-template.bbl.
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
  (./synopsis-template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
 Package rerunfilecheck Info: File `synopsis-template.out' has not changed.
 (rerunfilecheck)             Checksum: D2150D6373AB71F403654D9EBBED78E4;201.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
  ) 
 Here is how much of TeX's memory you used:
- 18798 strings out of 493013
- 391627 string characters out of 6135682
- 472882 words of memory out of 5000000
- 21958 multiletter control sequences out of 15000+600000
+ 18824 strings out of 493013
+ 391868 string characters out of 6135682
+ 473099 words of memory out of 5000000
+ 21963 multiletter control sequences out of 15000+600000
  14656 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,6n,71p,398b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -766,10 +767,10 @@ f-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on synopsis-template.pdf (5 pages, 81586 bytes).
+Output written on synopsis-template.pdf (6 pages, 87434 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 54 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
