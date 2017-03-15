@@ -1,0 +1,299 @@
+% =====================================================================
+% ====                                                             ====
+% ==== Synopsis template, revised from diploma thesis short paper
+% ====                                                             ====
+% ==== Henrik Bærbak Christensen Winter 2004-2005
+% ====                                                             ====
+% =====================================================================
+
+
+\documentclass[a4paper]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{palatino}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[german]{babel}
+\usepackage{tikz}
+
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
+	decorations.pathreplacing,decorations.pathmorphing,shapes,%
+	matrix,shapes.symbols}
+
+\tikzset{
+	>=stealth',
+	punktchain/.style={
+		rectangle, 
+		rounded corners, 
+		% fill=black!10,
+		draw=black, very thick,
+		text width=10em, 
+		minimum height=3em, 
+		text centered, 
+		on chain},
+	line/.style={draw, thick, <-},
+	element/.style={
+		tape,
+		top color=white,
+		bottom color=blue!50!black!60!,
+		minimum width=8em,
+		draw=blue!40!black!90, very thick,
+		text width=10em, 
+		minimum height=3.5em, 
+		text centered, 
+		on chain},
+	every join/.style={->, thick,shorten >=1pt},
+	decoration={brace},
+	tuborg/.style={decorate},
+	tubnode/.style={midway, right=2pt},
+}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=cyan
+}
+
+
+%% a point to check
+\definecolor{checkcolor}{rgb}{0.75, 0.75, 0.75}
+\newsavebox{\definitionbox}
+\newenvironment{checkit}{%
+\begin{lrbox}{\definitionbox}
+\begin{minipage}[t]{0.85\textwidth}%
+}%
+{\end{minipage}\end{lrbox}%
+\begin{center}{\colorbox{checkcolor}{\usebox{\definitionbox}}}%
+\end{center}}
+
+
+\title{Einführung in die Wirtschaftsinformatik Zusammenfassung}
+
+\author{K.M et S.F}
+
+\date{2017}
+
+
+\begin{document}
+
+\maketitle
+
+\sloppy
+\begin{checkit}
+Folgende Zusammenfassung ersetzt weder die Vorlesung noch Übungen, sondern dient als Lernhilfe zur Vorbereitung für die Klausur (Einführung in die Wirtschaftsinformatik). Es gibt keine Garantie auf Vollständigkeit und Richtigkeit dieses Dokuments.
+\end{checkit}
+
+\section*{Lerneinheit 1}
+\subsection*{Lernziele}
+\begin{enumerate}
+	%%there has to be a better to solve this italics thing
+	\item \hyperref[le1-1]{\textit{Sie erkennen die Bedeutung der Wirtschaftsinformatik.}}
+	\item \hyperref[le1-2]{\textit{Sie kennen die Paradigmen und Teilgebiete der Wirtschaftsinformatik.}}
+	\item \hyperref[le1-3]{\textit{Sie erhalten Einblick in das Berufsfeld Wirtschaftsinformatik.}}
+	\item \hyperref[le1-4]{\textit{Sie kennen die Bedeutung der Ressource Information und von Informationssystemen für Unternehmen.}}
+	\item \hyperref[le1-5]{\textit{Sie kennen die Bestandteile und Eigenschaften von Informationssystemen.}}
+	\item \hyperref[le1-6]{\textit{Sie können die verschiedenen Arten von Informationssystemen systematisieren.}}
+\end{enumerate}
+
+\subsection*{Frage 1}
+\label{le1-1}
+\begin{itemize}
+	\item \textbf{Gegenstand} der Wirtschaftsinformatik sind Informations- und Kommunikationssysteme in Wirtschaft und Verwaltung.
+	\item \textbf{Ziel} ist die optimale Bereitstellung von Information und Kommunikation nach wirtschaftlichen Kriterien
+\end{itemize}
+
+\subsection*{Frage 2}
+\label{le1-2}
+\begin{itemize}
+	\item \textbf{Modellierung} $\rightarrow$ Reduzierung der Komplexität
+	\item \textbf{Integrationswissenschaft} $\rightarrow$ Zusammenhänge Menschen-Organisation-IKT
+	\item \textbf{Gestaltung} $\rightarrow$ betrieblicher Informationssysteme
+\end{itemize}
+
+\subsection*{Frage 3}
+\label{le1-3}
+\begin{enumerate}
+	\item Hardware die für \textbf{Systeme} benötigt werden
+	\item Kosten-Nutzen-Analyse für das geplante \textbf{System} 
+	\item \textbf{System}einführung gestalteten
+	\item Entscheidung zwischen Standardsoftware und speziell entwickelte Software
+\end{enumerate}
+
+\subsection*{Frage 4}
+\label{le1-4}
+%% SOURCE OF THIS SORCERY I JUST DO THE EDIT http://www.texample.net/tikz/examples/assignment-structure/
+\subsubsection*{}
+\begin{center}
+\begin{tikzpicture}
+[node distance=.8cm,
+start chain=going above,]
+\node[punktchain, draw=none](woop){}; %%nice little hack
+\node (asym) [punktchain ]  {Zeichen};
+\node[punktchain, join,] (disk) {Daten};
+\node[punktchain, join,] (makro) {Information};
+\node[punktchain, join] (konk) {Wissen};
+
+
+%% No. 2
+\draw[tuborg, decoration={brace}] let \p1=(disk.north), \p2=(makro.south) in	
+($(2, \y1)$) -- ($(2, \y2)$) node[tubnode] {KONTEXT};
+
+\draw[tuborg, decoration={brace}] let \p1=(asym.north), \p2=(disk.south) in ($(2, \y1)$) -- ($(2, \y2)$) node[tubnode] {SYNTAX};
+
+\draw[tuborg, decoration={brace}] let \p1=(makro.north), \p2=(konk.south) in ($(2, \y1)$) -- ($(2, \y2)$) node[tubnode] {VERNETZUNG};
+
+\draw[tuborg, decoration={brace}] let \p1=(woop.north), \p2=(asym.south) in ($(2, \y1)$) -- ($(2, \y2)$) node[tubnode] {VERNETZUNG};
+
+\end{tikzpicture}
+\end{center}
+\hrulefill
+\subsubsection*{}
+\textbf{Informationssystem}:
+\begin{quote}
+Es handelt sich um soziotechnische Systeme, die menschliche und maschinelle Komponenten als Aufgabenträger umfassen, die voneinander abhängig sind, ineinandergreifen und oder zusammenwirken.
+\end{quote}
+\subsubsection*{}
+\hrulefill \\ \\
+Um Information als Wirtschaftsgut anzusehen muss eine relative Knappheit bestehen und ökonomisch auf eine Nachfrage stoßen.\\
+\hrulefill
+
+\pagebreak
+
+\subsubsection*{}
+\hrulefill \\ \\
+\textbf{Informationslogistische Grundprinzip} (\texttt{MIEZO}) 
+\begin{itemize}
+	\item in der richtigen \textbf{Menge}
+	\item der richtigen \textbf{Information}
+	\item \textbf{Ziel} ist die Bereitstellung/Vorhandensein
+	\item in der \textbf{erforderlichen Qualität} 
+	\item zum richtigen \textbf{Zeitpunkt} 
+	\item am richtigen \textbf{Ort}
+
+\end{itemize}
+
+\subsection*{Frage 5}
+\subsubsection*{}
+\textbf{Systeme} \\
+Ein System ist eine Menge von Elementen miteinander in Beziehung stehen.
+Sie unterscheiden sich in 
+offen - geschlossen 
+dynamisch - statisch 
+komplex ? einfach
+
+
+Describe the problem that your project work is focusing on. Try hard
+to come up with a 5-10 line hypothesis that you are capable of confirm
+or falsify. It is no problem to state a problem in half a page, and
+no-one will notice that it is ill-defined (not even yourself!)
+However, forcing yourself to write it in five lines only, requires lot
+of precision that will force you to define your project much more
+accurately.
+
+You may also express it somewhat broader as a problem statement (still
+short!), but ensure that it is in a form where you can
+argue/demonstrate that you have analyzed and evaluated the problem.
+
+A fine ``problem'' in a teaching context is also to apply theory in
+practice and learn about its advantages and short-comings.
+
+An important part of this section is also assumptions and
+delimitations. What assumptions do you have about the project, the
+process or the environment? What subproblems do you not address or
+will not address? Almost any project is capable of consuming an
+infinite amount of work and you do not have unlimited time and
+resources as hand---therefore it is important to explicitly delimit
+the problem and state what you intend to look into and what not.
+
+A final thing is characterization: ensure that all the concepts you
+use is well-defined or else give a definition. We know what 'object'
+means in the usual sense, but a term like 'component' still has many
+different meanings! Which one do you use? Also if you use company
+specific concepts, be sure to define them as precisely as possible.
+
+Use typography to make definitions and problem statements stand out in
+the text. It is more difficult to overview a text where important
+points are written inside large chunks of less import text than it is
+to find them as
+
+\begin{checkit}
+Use typography to make important points like definitions, results,
+problem statements, and other text that needs to be consulted often,
+stand out in the text.
+\end{checkit}
+
+\section{Method}
+
+How do you intend to analyse the problem? What theory, books, and
+papers have you read that help you to analyse, discuss, and work with
+the problem?
+
+
+A short summary of how you are going to confirm/falsify the
+hypothesis: what prototypes do you expect to build, how will you
+evaluate and measure them, what techniques and tools are you going to
+use, which people will you interview, how will you document processes
+and products, how will you record you progress, how will you analyze
+your work, how will each phase contribute to validating the
+hypothesis?
+
+\section{(Expected) Analyses and Results}
+
+This the main body of your report where you outline what you have
+done, how it contributes to analysing the problem, the results of your
+work, argue why your results are correct, relate them to theory, and
+document what has been achieved.
+
+Remember that designs are often best described and supported by
+diagrams and central algorithms are best expressed in small fragments
+of real or pseudo code. Text like ``the server calls the 'update'
+method which next calls the 'IAmBored' method in the \ldots'' are
+terrible and next to impossible to read.
+
+Avoid narrative writing styles like ``then we did X but it did not work, so
+we tried Y and it worked better''. Rather, use a (problem, analysis,
+solution) format: ``Problem: (describe short and precisely), Analysis:
+(describe a set of problem solutions), Solution: (describe and argue
+why a given solution was chosen).''
+
+Remember that the primary objective with your report is to demonstrate
+that you master the theory introduced in the course and your
+analytical skills to ``think clever thoughts'' and related and discuss
+your work. It is not to program a polished product ready for shipment.
+
+
+\section{Related work}
+
+[This section may be put in front of the hypothesis section or
+  integrated into the method section, if it make the flow of text more
+  natural.]
+
+In this section you outline what literature and other work your
+project build upon: papers, books, links to webpages, tutorials,
+etc. All references should be resolved in the reference section, that
+is do not use footnotes, or put the reference directly in the
+text. For an example, look how references are cited in Bardram et
+al.\cite{bardram}.
+
+It is good to address how your work extends, use, or build upon the
+cited work. 
+
+\section{Conclusion}
+
+Your synopsis should clearly state: abstract, motivation, hypothesis,
+method, and (expected) analyses and results.
+
+
+% ============================================================================
+% === REFERENCES =============================================================
+% ============================================================================
+
+\bibliographystyle{abbrv}
+
+\bibliography{bib}
+
+
+
+\end{document}
+\grid

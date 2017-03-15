@@ -1,1 +1,1 @@
-# Summary-Winfo-Latex
+Einführung in die Wirtschaftsinformatik Zusammenfassung
