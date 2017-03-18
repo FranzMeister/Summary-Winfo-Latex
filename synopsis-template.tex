@@ -15,6 +15,9 @@
 \usepackage{hyperref}
 \usepackage[german]{babel}
 \usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 \usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
 	decorations.pathreplacing,decorations.pathmorphing,shapes,%
@@ -288,19 +291,121 @@ Beschreibt die Bereitstellung von IT-Infrastuktur und IT-Leistungen im Internet.
 ...Plattform und alle Stakeholder die auf ihr interagieren. \\
 \hrulefill
 
-\subsubsection*{Plattformökosystem}
+\subsubsection*{Zwei Perspektiven auf Plattform Ökosysteme}
+%\begin{adjustbox}{max width=\textwidth}
+%	\begin{tabular}{p{.7\textwidth}}{|r|c|c}
+%		\hline
+%		\textbf{Plattform} & \textbf{Technologie-orientiert} & \textbf{Markt-orientiert} \\
+%		\hline
+%		\textbf{Zweck} & Mitgestaltung der Wertschöpfung, Innovation & Abgleich von Angebot und Nachfrage, Informationsaustausch  \\
+%		\hline
+%		\textbf{Anwendung} & Software -- Hardware & Marktplatz -- Community \\
+%		\hline
+%	\end{tabular}
+%\end{adjustbox}
 
-
+%WILL FIX LATER
+\begin{adjustbox}{max width=\linewidth}
+	\begin{tabular}{|r|c|c|}
+		\hline
+		\textbf{Plattform} & \textbf{Technologie-orientiert} & \textbf{Markt-orientiert} \\
+		\hline
+		\textbf{Zweck} & Mitgestaltung der Wertschöpfung, Innovation & Abgleich von Angebot und Nachfrage, Informationsaustausch  \\
+		\hline
+		\textbf{Anwendung} & Software -- Hardware & Marktplatz -- Community \\
+		\hline
+	\end{tabular}
+\end{adjustbox}
 
 \subsection*{Frage 3}
 \label{le2-3}
-\subsubsection*{title}
+\subsubsection*{Technik, Innovationen, Wettbewerb}
+MISSING SELF-MADE DIAGRAM.
+
 \subsection*{Frage 4}
 \label{le2-4}
-\subsubsection*{title}
+\subsubsection*{Veränderung der Rolle der IKT}
+\begin{itemize}
+	\item [] \textbf{1. Phase:} Massenverarbeitung (50er-60er Jahre)
+	\item [] \textbf{2. Phase:} Produktivitätssteigerung (70er-80erJahre)
+	\item [] \textbf{3. Phase:} Strategischer Einsatz von Informationssysteme
+	\item [] \textbf{4. Phasee:} Informationsbereitstellung (90er Jahre)
+\end{itemize}
+\hrulefill
+
+\subsubsection*{Einfluss IKT auf Organisation:}
+\begin{itemize}
+	\item Überführung unstrukturierter Abläufe in routinemäßige Abläufe
+	\item Beschleunigung wertschöpfender Aktivitäten
+	\item Ersatz und Reduktion menschlicher Arbeit
+	\item Verfolgung von Input, Output und Status
+\end{itemize}
+
+
 \subsection*{Frage 5}
 \label{le2-5}
-\subsubsection*{title}
+\subsubsection*{Prozessorientierung als organisatorisches Paradigma}
+Organisation die auf IT gestutzte Prozessorientierung aufbaut.
+
+\section*{Lerneineit 3}
+\subsection*{Lernziele}
+\begin{enumerate}
+	\item Sie kennen die Notwendigkeit der Verwendung von Modellen sowie verschiedene Arten von Modellen
+	\item Sie verstehen den Unterschied zwischen Modell und Referenzmodell (Referenzbehauptung, Vor- und Nachteile)
+	\item Sie haben einen Überblick über verschiedene Referenzmodelle (Handel, Industrie, Lieferketten)
+\end{enumerate}
+
+\subsection*{Frage 1}
+\subsubsection*{Warum Modelle?}
+%
+%\begin{adjustbox}{max width=\linewidth}
+%\begin{table}
+%\begin{tabular}{r c}
+%	Grundzweck & Abbildung der Realität zur Reduktion von Komplexität \\
+%	Fragen beim Modellieren & \tabitem Wovon
+%\end{tabular}
+%\end{table}
+%\end{adjustbox}
+%\\
+\centering
+	\begin{tabular}{ll}
+		\toprule
+			\multicolumn{2}{c}{\textbf{Grundzweck}: Reduktion von Komplexität} \\[.5\normalbaselineskip]
+		\multicolumn{2}{c}{Modell ist stets Modell:} \\
+		\midrule
+		\tabitem Wovon? & Gegenstand \\
+		\tabitem Wozu? & Zweck \\
+		\tabitem Für wen? & Zielgruppe, Adressat \\
+		\hline
+	\end{tabular}
+\\[1\normalbaselineskip]
+
+\hrulefill
+
+\raggedright
+\subsubsection*{Elemente von Modellen}
+\begin{itemize}
+	\item Abbildungsregeln
+	\item Modellsubjekt
+	\item Abzubildene Realität
+	\item Adressaten der Modelbetrachtung
+\end{itemize}
+\hrulefill
+
+\subsubsection*{Schritte der Modellierung}
+\begin{tikzpicture}
+
+\def \n {5}
+\def \radius {3cm}
+\def \margin {8} % margin in angles, depends on the radius
+
+\foreach \s in {1,...,\n}
+{
+	\node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
+	\draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
+	arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+}
+\end{tikzpicture}
 
 
 Describe the problem that your project work is focusing on. Try hard
