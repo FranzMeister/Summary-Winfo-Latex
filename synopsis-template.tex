@@ -61,7 +61,6 @@
 	urlcolor=cyan
 }
 
-
 %% a point to check
 \definecolor{checkcolor}{rgb}{0.75, 0.75, 0.75}
 \newsavebox{\definitionbox}
@@ -218,6 +217,8 @@ Ein System ist eine Menge von Elementen miteinander in Beziehung stehen. Sie unt
 	\item \textbf{nicht integrierte IS:} Schnittstellen verknüpfen die Systeme miteinander
 \end{itemize}
 
+\pagebreak
+
 \section*{Lerneinheit 2}
 \subsection*{Lernziele}
 \begin{enumerate}
@@ -329,7 +330,7 @@ MISSING SELF-MADE DIAGRAM.
 	\item [] \textbf{1. Phase:} Massenverarbeitung (50er-60er Jahre)
 	\item [] \textbf{2. Phase:} Produktivitätssteigerung (70er-80erJahre)
 	\item [] \textbf{3. Phase:} Strategischer Einsatz von Informationssysteme
-	\item [] \textbf{4. Phasee:} Informationsbereitstellung (90er Jahre)
+	\item [] \textbf{4. Phase:} Informationsbereitstellung (90er Jahre)
 \end{itemize}
 \hrulefill
 
@@ -347,15 +348,18 @@ MISSING SELF-MADE DIAGRAM.
 \subsubsection*{Prozessorientierung als organisatorisches Paradigma}
 Organisation die auf IT gestutzte Prozessorientierung aufbaut.
 
+\pagebreak %maybe a good idea to pagebreak between each LE
+
 \section*{Lerneineit 3}
 \subsection*{Lernziele}
 \begin{enumerate}
-	\item Sie kennen die Notwendigkeit der Verwendung von Modellen sowie verschiedene Arten von Modellen
-	\item Sie verstehen den Unterschied zwischen Modell und Referenzmodell (Referenzbehauptung, Vor- und Nachteile)
-	\item Sie haben einen Überblick über verschiedene Referenzmodelle (Handel, Industrie, Lieferketten)
+	\item \hyperref[le3-1]{\textit{Sie kennen die Notwendigkeit der Verwendung von Modellen sowie verschiedene Arten von Modellen}}
+	\item \hyperref[le3-2]{\textit{Sie verstehen den Unterschied zwischen Modell und Referenzmodell (Referenzbehauptung, Vor- und Nachteile)}}
+	\item \hyperref[le3-3]{\textit{Sie haben einen Überblick über verschiedene Referenzmodelle (Handel, Industrie, Lieferketten)}}
 \end{enumerate}
 
 \subsection*{Frage 1}
+\label{le3-1}
 \subsubsection*{Warum Modelle?}
 %
 %\begin{adjustbox}{max width=\linewidth}
@@ -376,7 +380,7 @@ Organisation die auf IT gestutzte Prozessorientierung aufbaut.
 		\tabitem Wovon? & Gegenstand \\
 		\tabitem Wozu? & Zweck \\
 		\tabitem Für wen? & Zielgruppe, Adressat \\
-		\hline
+		\bottomrule
 	\end{tabular}
 \\[1\normalbaselineskip]
 
@@ -393,20 +397,209 @@ Organisation die auf IT gestutzte Prozessorientierung aufbaut.
 \hrulefill
 
 \subsubsection*{Schritte der Modellierung}
-\begin{tikzpicture}
+%\begin{tikzpicture}
+%
+%\def \n {5}
+%\def \radius {3cm}
+%\def \margin {8} % margin in angles, depends on the radius
+%
+%\foreach \s in {1,...,\n}
+%{
+%	\node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
+%	\draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
+%	arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+%}
+%\end{tikzpicture}
 
-\def \n {5}
-\def \radius {3cm}
-\def \margin {8} % margin in angles, depends on the radius
+\begin{tikzpicture}[
+start chain = going right,
+block/.style = {rectangle, draw, rounded corners, 
+	text width=6em, align=center, minimum height=4em,
+	on chain},
+every pin/.style = {inner sep=1mm, align=center, font=\footnotesize,
+	pin distance=9mm, pin edge={angle 60-, solid, black}},
+]
+\node[block] (A) {Ausschnitt aus der Realität};
+\node[block] (B) {Ist-Modell};
+\node[block] (C) {Soll-Modell};
+\node[block] (D) {Realität schaffen/ändern};
 
-\foreach \s in {1,...,\n}
-{
-	\node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
-	\draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
-	arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
-}
+\linespread{0.9}
+\draw[-latex'] (A) to node[inner sep=0pt,
+pin=above:aktive (Re-)konstruktion\\
+Modellierung] {}    (B);
+
+\draw[-latex'] (B) to node[inner sep=0pt,
+pin=above:Fantasie] {}    (C);
+
+\draw[-latex'] (C) to node[inner sep=0pt,
+pin=above:Konstruktion] {}    (D);
 \end{tikzpicture}
+\\ \hrulefill
+\pagebreak
 
+\subsubsection*{Arten von Modellen}
+\begin{itemize}
+	\item \textbf{deskriptiv} (Abbild): Erklärungs-, Prognosemodelle
+	\item \textbf{transient} (Ab- und Vorbild)
+	\item \textbf{präskriptiv}(Vorbild): Gestaltung-, Optimierungsmodelle
+\end{itemize}
+
+%
+%\begin{tabular}{ll}
+%	\multicolumn{2}{l}{\textbf{Arten von Modellen}} \\[.5\normalbaselineskip]
+%	\tabitem \textbf{deskriptiv} (Abbild): & Erklärungs-, Prognosemodelle \\[.5\normalbaselineskip]
+%	\tabitem \textbf{transient} (Ab- und Vorbild) & \\[.5\normalbaselineskip]
+%%	\tabitem \multicolumn{2}{l}{transient Ab- und Vorbild} \\[.5\normalbaselineskip]
+%	\tabitem \textbf{präskriptiv} (Vorbild): & Zielgruppe, Adressat \\[.5\normalbaselineskip]
+%\end{tabular}
+%\\[1\normalbaselineskip]
+
+\hrulefill
+
+\raggedright
+
+\subsubsection*{Aspekte der Modellierung}
+\begin{itemize}
+	\item schaffen Transparenz über Elemente und Beziehungen im Unternehmen
+	\item erklären Funktionsweise des Unternehmens
+	\item erleichtert die Kommunikation im Unternehmen
+\end{itemize}
+
+\subsection*{Frage 2}
+\label{le3-2}
+\subsubsection*{Referenz:}
+\begin{quote}
+	auf etwas zurückführen, sich auf etwas beziehen, berichten.
+\end{quote}
+\subsubsection*{Ein Referenz-Informationsmodell ist ...}
+\begin{itemize}
+	\item das \textbf{immaterielle Abbild}
+	\item der in einem \textbf{realen} oder \textbf{gedachten} betrieblichen \textbf{Objektsystem}
+	\item verarbeiteten Informationen,
+	\item das für \textbf{Zwecke des Informationssystem-} und Organisationsgestalters
+	\item \textbf{Empfehlungscharakter} besitzt und
+	\item als \textbf{Bezugspunkt} für \textbf{unternehmensspezifische Informationsmodelle} dienen kann.
+\end{itemize}
+
+\subsubsection*{Vereinfacht/tldr:}
+\begin{quote}
+	\texttt{Das Referenzmodell stellt somit ein Modellmuster dar, das als idealtypisches Modell für die Klasse der zu modellierenden Sachverhalte betrachtet werden kann.}
+\end{quote}
+
+\subsubsection*{Beschreibung:}
+\begin{itemize}
+	\item Normativer Charakter von Referenzmodellen (\textbf{Gestaltungsempfehlungen})
+	\item \textbf{Heterogenität} der Referenzmodelle (z.B. branchenspezifische Datenmodelle, \hyperref{https://en.wikipedia.org/wiki/OSI_model}{}{}{ISO-OSI-Schichtenmodell})
+\end{itemize}
+
+\subsubsection*{Anforderungen}
+\begin{itemize}
+	\item \textbf{Allgemeingültig}keitsanspruch von Referenzmodellen
+	\subitem Problem: Wahl eines adäquaten Abstraktionsgrades
+	\item \textbf{Robustheit der Modelle} gegenüber \textbf{Änderungen der Real Welt}
+	\subitem Flexibilität: Durchführung von Veränderungen mit \textbf{geringem Aufwand}
+	\item \textbf{Konsistenzforderung} an Referenzmodelle
+\end{itemize}
+
+%\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{l|l}
+	\toprule
+	\multicolumn{2}{c}{\textbf{Modellvergleich}} \\[.5\normalbaselineskip]
+	%\multicolumn{2}{c}{Modell ist stets Modell:} \\
+	Modell & Referenzmodell \\
+	\midrule
+	\tabitem eine Abbildung eines Systems von Objekten & \tabitem für Wiederverwendung empfohlenes Modell \\
+	\tabitem bestimmten Zweck & \tabitem Modell das für Konstruktion weiterer Modelle genutzt wird \\
+	\tabitem konstruiert Abbildung realer Objekte für bestimmte Adressaten & \tabitem Konstruktion semantischer Gemeinsamkeiten in den Modellen \\
+	\bottomrule
+\end{tabular}
+\end{adjustbox}
+\\[1\normalbaselineskip]
+
+\subsubsection*{Vor- und Nachteile}
+\begin{itemize}
+	\item Spezialisierung, nicht individuell angepasst
+	\item Kostenersparnis durch Nutzung vom Referenzmodell (das Rad nicht neu erfinden)
+	\item leicht modifizierbar
+	\item keine Innovation durch Referenzmodelle
+\end{itemize}
+\hrulefill
+
+\subsubsection*{Metamodell}
+\begin{itemize}
+	\item Abbildung von Modell \& Modellbildung als Gegenstand der Modellierung mit Fokus auf \textbf{Syntax des Modellsystems}
+	\item Prozess- oder Sprachenfokus
+	\item abstrahiert von der Semantik des Modells
+\end{itemize}
+
+\subsubsection*{Ordnungsrahmen}
+\begin{quote}
+	Schafft aggregierten Überblick über wesentliche Funktionsbereichen einer Domäne.
+\end{quote}
+%\hrulefill
+
+\pagebreak
+
+\subsection*{Frage 3}
+\label{le3-3}
+\subsubsection*{Handels-H}
+\begin{itemize}
+	\item für Handelsunternehmen 
+	\item betriebw. Kernfunktionalitäten 
+	\item Beschaffen, Lagern, Verkaufen; Betriebw. administr. Aufgaben; dispositive Aufgaben
+\end{itemize}
+
+\subsubsection*{CIM (Computer Integrated Manufacturing Model)}
+\begin{itemize}
+	\item CIM beschreibt den integrierten EDV-Einsatz in allen mit der Produktion zusammenhängenden Betriebsbereichen.
+	\item CIM umfasst das informationstechnologische Zusammenwirken zwischen CAD, CAP, CAM, CAQ und PPS.
+	\item Bedingung: gemeinsame, bereichsübergreifende Nutzung der
+	\item Datenbasis
+\end{itemize}
+
+%INSERT IMAGE/REFERENCE HERE INSTEAD
+\subsubsection*{SCOR-Modell (Supply Chain Operations Reference Model)}
+\begin{itemize}
+	\item 
+\end{itemize}
+
+\section*{Lerneinheit 4}
+\subsection*{Lernziele}
+\begin{enumerate}
+	\item \hyperref[le4-1]{\textit{Sie lernen ARIS (Architektur Integrierter Informationssysteme) kennen und können die Verknüpfung der Daten- und Funktionssicht mit Hilfe von EPKs modellieren.}}
+	\item \hyperref[le4-2]{\textit{Sie sind in der Lage, einfache betriebswirtschaftliche Sachverhalte und Geschäftsprozesse in Datenmodelle zu überführen.}}
+	\item \hyperref[le4-3]{\textit{Sie verstehen das Paradigma der Objektorientierung, kennen die Unified Modeling Language (UML) und können einfache Klassendiagramme und Anwendungsfalldiagramme modellieren.}}
+\end{enumerate}
+
+\subsection*{Frage 1}
+\subsubsection*{ARIS (Haus)}
+\begin{quote}
+	allgemeiner Bezugsrahmen für Geschäftsprozessmodellierung.
+\end{quote}
+
+%\begin{adjustbox}{max width=\linewidth}
+	\begin{tabular}{l|l|l}
+		\toprule
+		\multicolumn{3}{c}{\textbf{Sichten}} \\[.5\normalbaselineskip]
+		%\multicolumn{2}{c}{Modell ist stets Modell:} \\
+		\textbf{Sicht} & \textbf{Inhalt} & \textbf{Beispiel} \\
+		\midrule
+		\textbf{Datensicht} & beschreibt Informationsobjekte zu Repräsentation von Ereignissen und Zuständen. Auftrag ist abgewickelt & Auftrag ist abgewickelt \\[0.5\normalbaselineskip]
+		\textbf{Funktionssicht} & beschreibt Funktionen und ihre Zusammenhänge in Form von Funktionsbäumen & (Teil)funktionen der Auftragsabwicklung \\[0.5\normalbaselineskip]
+		\textbf{Organisationssicht} & beschreibt Struktur und Beziehungen und Aufgabenträgern und Organisationseinheiten & Herr M. Abt. Auftragsannahme \\[0.5\normalbaselineskip]
+		\textbf{Steuerungssicht} & beschreibt die Verbindung zwischen den Sichten & Prozesskette: Auftragsabwicklung \\[0.5\normalbaselineskip]
+		\bottomrule
+	\end{tabular}
+%\end{adjustbox}
+\\[1\normalbaselineskip]
+
+\begin{tabular}{|p{0.8\linewidth}|p{0.6\linewidth} |}
+	TEXT TEXT TEXT & TEXT TEXT \\
+\end{tabular}
+
+%\raggedright
 
 Describe the problem that your project work is focusing on. Try hard
 to come up with a 5-10 line hypothesis that you are capable of confirm

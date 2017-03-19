@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  18 MAR 2017 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  19 MAR 2017 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,21 +684,21 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 62.
  (./synopsis-template.aux)
 \openout1 = `synopsis-template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
@@ -734,7 +734,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 84.
+Package hyperref Info: Link coloring ON on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -744,9 +744,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
 
 (./synopsis-template.out) (./synopsis-template.out)
 \@outlinefile=\write4
@@ -755,101 +755,127 @@ LaTeX Info: Redefining \nameref on input line 84.
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 87.
+(Font)              <12> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 87.
+(Font)              <8> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 87.
+(Font)              <6> on input line 86.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 93.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 94.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 108.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 93.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 107.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 108.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 115.
+(Font)              <7> on input line 114.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 115.
+(Font)              <5> on input line 114.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 165--168
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 173.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 172.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 173.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 172.
  [2]
-Underfull \hbox (badness 2285) in paragraph at lines 216--217
+Underfull \hbox (badness 2285) in paragraph at lines 215--216
 []\OT1/ppl/b/n/10 rechnergest^^?utztes IS: \OT1/ppl/m/n/10 ba-siert und Ein-sat
 z von In-for-ma-ti-ons-tech-nik
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 [][][]\OT1/ppl/m/it/10 Sie ken-nen die wich-tig-sten tech-ni-schen Ent-wick-lun
 gs-li-ni-en Ka-pa-
  []
 
-[4]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 251.
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 252.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
-[6] [7] [8]
+[6] [7]
+Overfull \hbox (8.62202pt too wide) in paragraph at lines 437--438
+[] 
+ []
 
-LaTeX Warning: Citation `bardram' on page 9 undefined on input line 502.
+[8] [9] [10]
 
-No file synopsis-template.bbl.
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
+LaTeX Warning: Hyper reference `le4-1' on page 11 undefined on input line 571.
+
+
+LaTeX Warning: Hyper reference `le4-2' on page 11 undefined on input line 572.
+
+
+LaTeX Warning: Hyper reference `le4-3' on page 11 undefined on input line 573.
+
+
+Overfull \hbox (431.23071pt too wide) in paragraph at lines 583--596
+[][] 
+ []
+
+[11]
+Overfull \hbox (162.00316pt too wide) in paragraph at lines 598--601
+[][] 
+ []
+
+[12]
+
+LaTeX Warning: Citation `bardram' on page 13 undefined on input line 695.
+
+(./synopsis-template.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 716.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 716.
  (./synopsis-template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 716.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 716.
 Package rerunfilecheck Info: File `synopsis-template.out' has not changed.
 (rerunfilecheck)             Checksum: D2150D6373AB71F403654D9EBBED78E4;201.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 716.
  ) 
 Here is how much of TeX's memory you used:
- 19751 strings out of 493013
- 407343 string characters out of 6135682
- 487908 words of memory out of 5000000
- 22826 multiletter control sequences out of 15000+600000
- 15463 words of font info for 42 fonts, out of 8000000 for 9000
+ 19761 strings out of 493013
+ 406523 string characters out of 6135682
+ 489002 words of memory out of 5000000
+ 22804 multiletter control sequences out of 15000+600000
+ 17080 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,71p,420b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,71p,420b,983s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
-uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-
-Output written on synopsis-template.pdf (9 pages, 104962 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
+atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on synopsis-template.pdf (13 pages, 117400 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 245 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 106 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
