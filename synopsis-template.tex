@@ -9,6 +9,14 @@
 
 \documentclass[a4paper]{article}
 
+\usepackage[a4paper,left=1.0in,right=1.0in]{geometry}
+
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+
+
 \usepackage[latin1]{inputenc}
 \usepackage{palatino}
 \usepackage{color}
@@ -267,7 +275,7 @@ Anbieter legen ihren Fokus in IT Produkt und Service Bereich auf die Kunden (hoh
 
 \subsubsection*{Big Data \& Datenverfügbarkeit}
 \begin{itemize}
-	\item 2.5 Exabytes pro Jahr -- verdoppelt sich alle 40 Monate
+	\item 2.5 Exabytes\footnote{1 Exabyte $=$ 1,000 Petabytes $=$ 1,000,000 Terabytes} pro Jahr -- verdoppelt sich alle 40 Monate
 	\item Geschwindigkeit -- real-time
 	\item Vielfalt der Daten -- GPS, Bilder, Nachrichten
 \end{itemize}
@@ -565,6 +573,8 @@ pin=above:Konstruktion] {}    (D);
 	\item 
 \end{itemize}
 
+\pagebreak
+
 \section*{Lerneinheit 4}
 \subsection*{Lernziele}
 \begin{enumerate}
@@ -574,134 +584,185 @@ pin=above:Konstruktion] {}    (D);
 \end{enumerate}
 
 \subsection*{Frage 1}
+\label{le4-1}
 \subsubsection*{ARIS (Haus)}
-\begin{quote}
-	allgemeiner Bezugsrahmen für Geschäftsprozessmodellierung.
-\end{quote}
+%\begin{quote}
+%	``allgemeiner Bezugsrahmen für Geschäftsprozessmodellierung.''
+%\end{quote}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{aris}
+	\caption{``allgemeiner Bezugsrahmen für Geschäftsprozessmodellierung.''}
+\end{figure}
+
+
 
 %\begin{adjustbox}{max width=\linewidth}
-	\begin{tabular}{l|l|l}
-		\toprule
-		\multicolumn{3}{c}{\textbf{Sichten}} \\[.5\normalbaselineskip]
-		%\multicolumn{2}{c}{Modell ist stets Modell:} \\
-		\textbf{Sicht} & \textbf{Inhalt} & \textbf{Beispiel} \\
-		\midrule
-		\textbf{Datensicht} & beschreibt Informationsobjekte zu Repräsentation von Ereignissen und Zuständen. Auftrag ist abgewickelt & Auftrag ist abgewickelt \\[0.5\normalbaselineskip]
-		\textbf{Funktionssicht} & beschreibt Funktionen und ihre Zusammenhänge in Form von Funktionsbäumen & (Teil)funktionen der Auftragsabwicklung \\[0.5\normalbaselineskip]
-		\textbf{Organisationssicht} & beschreibt Struktur und Beziehungen und Aufgabenträgern und Organisationseinheiten & Herr M. Abt. Auftragsannahme \\[0.5\normalbaselineskip]
-		\textbf{Steuerungssicht} & beschreibt die Verbindung zwischen den Sichten & Prozesskette: Auftragsabwicklung \\[0.5\normalbaselineskip]
-		\bottomrule
-	\end{tabular}
+%	\begin{tabular}{l|l|l}
+%		\toprule
+%		\multicolumn{3}{c}{\textbf{Sichten}} \\[.5\normalbaselineskip]
+%		%\multicolumn{2}{c}{Modell ist stets Modell:} \\
+%		\textbf{Sicht} & \textbf{Inhalt} & \textbf{Beispiel} \\
+%		\midrule
+%		\textbf{Datensicht} & beschreibt Informationsobjekte zu Repräsentation von Ereignissen und Zuständen. Auftrag ist abgewickelt & Auftrag ist abgewickelt \\[0.5\normalbaselineskip]
+%		\textbf{Funktionssicht} & beschreibt Funktionen und ihre Zusammenhänge in Form von Funktionsbäumen & (Teil)funktionen der Auftragsabwicklung \\[0.5\normalbaselineskip]
+%		\textbf{Organisationssicht} & beschreibt Struktur und Beziehungen und Aufgabenträgern und Organisationseinheiten & Herr M. Abt. Auftragsannahme \\[0.5\normalbaselineskip]
+%		\textbf{Steuerungssicht} & beschreibt die Verbindung zwischen den Sichten & Prozesskette: Auftragsabwicklung \\[0.5\normalbaselineskip]
+%		\bottomrule
+%	\end{tabular}
 %\end{adjustbox}
-\\[1\normalbaselineskip]
-
-\begin{tabular}{|p{0.8\linewidth}|p{0.6\linewidth} |}
-	TEXT TEXT TEXT & TEXT TEXT \\
-\end{tabular}
+%\\[1\normalbaselineskip]
 
 %\raggedright
 
-Describe the problem that your project work is focusing on. Try hard
-to come up with a 5-10 line hypothesis that you are capable of confirm
-or falsify. It is no problem to state a problem in half a page, and
-no-one will notice that it is ill-defined (not even yourself!)
-However, forcing yourself to write it in five lines only, requires lot
-of precision that will force you to define your project much more
-accurately.
+\subsubsection*{Beschreibung der Sichten}
 
-You may also express it somewhat broader as a problem statement (still
-short!), but ensure that it is in a form where you can
-argue/demonstrate that you have analyzed and evaluated the problem.
+\begin{tabularx}{\textwidth}{l|X|l}
+		%\multicolumn{3}{c}{\textbf{Sichten}} \\[.5\normalbaselineskip]
+		%\multicolumn{2}{c}{Modell ist stets Modell:} \\
+		%\toprule
+		\textbf{Sicht} & \textbf{Inhalt} & \textbf{Beispiel} \\
+		\toprule
+		\textbf{Datensicht} & beschreibt Informationsobjekte zu Repräsentation von Ereignissen und Zuständen. Auftrag ist abgewickelt & Auftrag ist abgewickelt \\[4\normalbaselineskip]
+		\textbf{Funktionssicht} & beschreibt Funktionen und ihre Zusammenhänge in Form von Funktionsbäumen & (Teil)funktionen der Auftragsabwicklung \\[3\normalbaselineskip]
+		\textbf{Organisationssicht} & beschreibt Struktur und Beziehungen und Aufgabenträgern und Organisationseinheiten & Herr M. Abt. Auftragsannahme \\[3\normalbaselineskip]
+		\textbf{Steuerungssicht} & beschreibt die Verbindung zwischen den Sichten & Prozesskette: Auftragsabwicklung \\[0.5\normalbaselineskip]
+		\bottomrule
+\end{tabularx}
 
-A fine ``problem'' in a teaching context is also to apply theory in
-practice and learn about its advantages and short-comings.
+\bigskip
+%\\[2\normalbaselineskip]
 
-An important part of this section is also assumptions and
-delimitations. What assumptions do you have about the project, the
-process or the environment? What subproblems do you not address or
-will not address? Almost any project is capable of consuming an
-infinite amount of work and you do not have unlimited time and
-resources as hand---therefore it is important to explicitly delimit
-the problem and state what you intend to look into and what not.
+\subsubsection*{Beschreibung der Schichten}
+\begin{tabularx}{\textwidth}{X|X|X}
+	%\multicolumn{3}{c}{\textbf{Schichten}} \\[0.5\normalbaselineskip]
+	%\toprule
+	\textbf{Fachkonzept} & \textbf{DV-Konzept} & \textbf{Implementierung} \\
+	\toprule
+	\begin{itemize}[leftmargin=*]
+		\item Anforderungsanalyse
+		\item Darstellung fachlich-betriebswirtschaftlicher Sachverhalte
+	\end{itemize}
+	&
+	\begin{itemize}[leftmargin=*]
+		\item Anpassung des Fachkonzepts an die SOMETHING MISSING
+		\item Anforderungen zur DV-technischen Unterstützung
+	\end{itemize}
+	&
+	\begin{itemize}[leftmargin=*]
+		\item Umsetzung in konkrete Soft- und Hardwarekomponenten
+	\end{itemize}\\
+	\bottomrule
+	\end{tabularx}
 
-A final thing is characterization: ensure that all the concepts you
-use is well-defined or else give a definition. We know what 'object'
-means in the usual sense, but a term like 'component' still has many
-different meanings! Which one do you use? Also if you use company
-specific concepts, be sure to define them as precisely as possible.
+\bigskip
+%\hrulefill
 
-Use typography to make definitions and problem statements stand out in
-the text. It is more difficult to overview a text where important
-points are written inside large chunks of less import text than it is
-to find them as
+\subsubsection*{EPK -- Steuerung: Fachkonzept}
+\begin{itemize}
+	\item \textbf{Ereignis:} beschreibt eingetretenen Zustand
+	\item \textbf{Funktion:} fachliche Aufgabe
+	\item \textbf{Konnektoren:} AND ($\land$), XOR ($\otimes$), OR ($\lor$)
+\end{itemize}
 
-\begin{checkit}
-Use typography to make important points like definitions, results,
-problem statements, and other text that needs to be consulted often,
-stand out in the text.
-\end{checkit}
+\pagebreak
 
-\section{Method}
+\subsection*{Frage 2}
+\label{le4-2}
+\subsubsection*{ERM -- Datensicht: Fachkonzept \& DV-Konzept \& Implementierung}
+\begin{itemize}
+	\item \textbf{Entity:} Objekt der realen oder der Vorstellungswelt, über das Informationen zu speichern sind
+	\item \textbf{Relation:} Beziehung zwischen Entities
+	\item \textbf{Attribut:} Eigenschaft von Entities oder Beziehungen
+\end{itemize}
 
-How do you intend to analyse the problem? What theory, books, and
-papers have you read that help you to analyse, discuss, and work with
-the problem?
+\subsubsection*{Modellierung des DV-Konzepts}
+\begin{itemize}
+	\item Relationale Datenmodelle
+	\begin{itemize}
+		\item Chen-Notation -- 1:N
+		\item Schlageter/Stucky-Notation -- N:1
+		\item min, max Notation (0, *)
+	\end{itemize}
+	\item Objektorientierte Datenmodelle
+\end{itemize}
 
+\subsubsection*{Implementierungsebene}
+\begin{itemize}
+	\item Hardwareeinsatz
+	\item Betrachtete Strukturen: Datenblöcke, Zeiger, Indexstrukturen
+\end{itemize}
 
-A short summary of how you are going to confirm/falsify the
-hypothesis: what prototypes do you expect to build, how will you
-evaluate and measure them, what techniques and tools are you going to
-use, which people will you interview, how will you document processes
-and products, how will you record you progress, how will you analyze
-your work, how will each phase contribute to validating the
-hypothesis?
+\hrulefill
 
-\section{(Expected) Analyses and Results}
-
-This the main body of your report where you outline what you have
-done, how it contributes to analysing the problem, the results of your
-work, argue why your results are correct, relate them to theory, and
-document what has been achieved.
-
-Remember that designs are often best described and supported by
-diagrams and central algorithms are best expressed in small fragments
-of real or pseudo code. Text like ``the server calls the 'update'
-method which next calls the 'IAmBored' method in the \ldots'' are
-terrible and next to impossible to read.
-
-Avoid narrative writing styles like ``then we did X but it did not work, so
-we tried Y and it worked better''. Rather, use a (problem, analysis,
-solution) format: ``Problem: (describe short and precisely), Analysis:
-(describe a set of problem solutions), Solution: (describe and argue
-why a given solution was chosen).''
-
-Remember that the primary objective with your report is to demonstrate
-that you master the theory introduced in the course and your
-analytical skills to ``think clever thoughts'' and related and discuss
-your work. It is not to program a polished product ready for shipment.
+\subsubsection*{Merkmal der Objektorientierung}
+\textbf{Objektorientierung:} Sichtweise auf komplexe Systeme, bei der ein System durch das Zusammenspiel kooperierender Objekte beschrieben wird um Komplexität zu reduzieren. \bigskip %\\[1\normalbaselineskip]
 
 
-\section{Related work}
+\textbf{Objekt:} Abbildung eines realen oder imaginären Gegenstands
+\begin{itemize}
+	\item Programmiertechnische Gegenstände (z.B. Button einer GUI)
+	\item Gegenstände des Problembereichs (z.B. Bankkonto)
+\end{itemize} \bigskip
 
-[This section may be put in front of the hypothesis section or
-  integrated into the method section, if it make the flow of text more
-  natural.]
+\textbf{Objektorientierte Programmierung:}
+\begin{itemize}
+	\item Ist ein Programmierparadigma, dass auf dem Konzept der Objektorientierung aufbaut
+	\item Grundidee ist dabei Daten und Funktionen, die auf diese Daten angewendet werden können, in Objekten zusammenzufassen 
+	\item Objekte verfügen dafür über einen Speicher (Attribute) und Funktionen (Methoden)
+	\item Objekte integrieren miteinander durch das Senden von Nachrichten (gegenseitiges Aufrufen der Methoden)
+\end{itemize}
 
-In this section you outline what literature and other work your
-project build upon: papers, books, links to webpages, tutorials,
-etc. All references should be resolved in the reference section, that
-is do not use footnotes, or put the reference directly in the
-text. For an example, look how references are cited in Bardram et
-al.\cite{bardram}.
+\pagebreak
 
-It is good to address how your work extends, use, or build upon the
-cited work. 
+\textbf{Klassen und Objekte}
+\begin{itemize}
+	\item Eine Klasse ist die Definition der Attribute, Operationen und der Semantik für eine Menge von Objekten
+	\item Ein Objekt ist ein Exemplar einer Klasse mit eigener Identität
+	\begin{itemize}
+		\item Der Zustand eines Objektes ist durch seine Attribute und Beziehungen zu anderen Objekten bestimmt
+		\item Das Verhalten wird durch eine Menge Operationen/Methoden beschrieben. 
+		\item Objekte kommunizieren über Botschaften/Nachrichten. Eine Botschaft aktiviert eine Operation gleichen Namens. Ausgabedaten werden an den Sender der Botschaft zurückgegeben. Eine Änderung des Zustands eines Objektes erfolgt in der Regel über seine Operationen
+	\end{itemize}
+\end{itemize}
 
-\section{Conclusion}
+\subsection*{Frage 3}
+\label{le4-3}
+\subsubsection*{Wozu dient UML?}
+Die \textbf{Unified Modeling Language}\footnote{UML bietet nur eine Notation, aber keine Methode, wie die Modellierung zu bewerkstelligen ist} ist eine graphische Sprache zur:
 
-Your synopsis should clearly state: abstract, motivation, hypothesis,
-method, and (expected) analyses and results.
+\begin{itemize}
+	\item Visualisierung
+	\item Spezifikation
+	\item Entwicklung
+	\item Dokumentation der Artefakte softwareintensiver Systeme
+\end{itemize}
 
+\pagebreak
+
+\section*{Lerneinheit 5}
+\subsection*{Lernziele}
+\begin{enumerate}
+	\item \hyperref[le5-1]{\textit{Sie verstehen den Nutzen von Modellen und kennen die allgemeinen Elemente der Modellierung.}}
+	\item \hyperref[le5-2]{\textit{Sie kennen die Grundelemente von Geschäftsmodellen, des Business Model Canvas, der $E^3$ Value Methode sowie der Dienstleistungsmodellierung (Service Blueprint).}}
+	\item \hyperref[le5-3]{\textit{Sie können betriebswirtschaftliche Sachverhalte in Geschäfts-, Wertfluss und Dienstleistungsmodellen darstellen.}}
+\end{enumerate}
+
+\subsection*{Frage 1}
+\label{le5-1}
+\subsubsection*{Geschäftsmodell}
+\begin{itemize}
+	\item Abbildung des betrieblichen Produktions- und Leistungssystems eines Unternehmens
+	\item sagt aus durch welche Kombination von Produktionsfaktoren die Geschäftsstrategie eines Unternehmens umgesetzt werden kann und welche Akteure was machen müssen
+\end{itemize}
+
+\subsection*{Frage 2}
+\label{le5-2}
+
+
+\subsection*{Frage 3}
+\label{le5-3}
 
 % ============================================================================
 % === REFERENCES =============================================================
