@@ -1,0 +1,95 @@
+\select@language {german}
+\contentsline {section}{\numberline {1}Lerneinheit 1}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Lernziele}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Frage 1}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Frage 2}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Frage 3}{5}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Frage 4}{6}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Zeichen, Daten, Information und Wissen}{6}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Informationssystem}{6}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}Information als Wirtschaftsgut}{6}{subsubsection.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.4}Informationslogistische Grundprinzip \texttt {MIEZO}}{6}{subsubsection.1.5.4}
+\contentsline {subsection}{\numberline {1.6}Frage 5}{7}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Systeme}{7}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Charakteristika / Eigenschaften}{7}{subsubsection.1.6.2}
+\contentsline {subsubsection}{\numberline {1.6.3}Grundfragen bei der Gestaltung von Informationssystem}{7}{subsubsection.1.6.3}
+\contentsline {subsection}{\numberline {1.7}Frage 6}{7}{subsection.1.7}
+\contentsline {subsubsection}{\numberline {1.7.1}Arten von Informationssytemen:}{7}{subsubsection.1.7.1}
+\contentsline {section}{\numberline {2}Lerneinheit 2}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Lernziele}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Frage 1}{8}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Technologie-Trends -- Gartner's Hype Cycle}{8}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Moore's Law}{8}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Web 2.0}{8}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Mobility \& Consumerization}{8}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Planbarkeit}{9}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}Big Data \& Datenverfügbarkeit}{9}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}Cloud Computing}{9}{subsubsection.2.2.7}
+\contentsline {subsection}{\numberline {2.3}Frage 2}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Digitalisierung}{9}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Plattform}{9}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Plattformökosystem}{9}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Zwei Perspektiven auf Plattform Ökosysteme}{9}{subsubsection.2.3.4}
+\contentsline {subsection}{\numberline {2.4}Frage 3}{10}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Technik, Innovationen, Wettbewerb}{10}{subsubsection.2.4.1}
+\contentsline {subsection}{\numberline {2.5}Frage 4}{10}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Veränderung der Rolle der IKT}{10}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Einfluss IKT auf Organisation:}{10}{subsubsection.2.5.2}
+\contentsline {subsection}{\numberline {2.6}Frage 5}{10}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Prozessorientierung als organisatorisches Paradigma}{10}{subsubsection.2.6.1}
+\contentsline {section}{\numberline {3}Lerneineit 3}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Lernziele}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Frage 1}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Warum Modelle?}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Elemente von Modellen}{11}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Schritte der Modellierung}{11}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Arten von Modellen}{12}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Aspekte der Modellierung}{12}{subsubsection.3.2.5}
+\contentsline {subsection}{\numberline {3.3}Frage 2}{12}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Referenz:}{12}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Ein Referenz-Informationsmodell ist ...}{12}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Vereinfacht/tldr:}{12}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Beschreibung:}{12}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Anforderungen}{13}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Vergleich Modell und Referenzmodell}{13}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}Vor- und Nachteile}{13}{subsubsection.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.8}Metamodell}{13}{subsubsection.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.9}Ordnungsrahmen}{13}{subsubsection.3.3.9}
+\contentsline {subsection}{\numberline {3.4}Frage 3}{14}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Handels-H}{14}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}CIM (Computer Integrated Manufacturing Model)}{14}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}SCOR-Modell (Supply Chain Operations Reference Model)}{14}{subsubsection.3.4.3}
+\contentsline {section}{\numberline {4}Lerneinheit 4}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Lernziele}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Frage 1}{15}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}ARIS (Haus)}{15}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Beschreibung der Sichten}{16}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Beschreibung der Schichten}{16}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}EPK -- Steuerung: Fachkonzept}{16}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.3}Frage 2}{17}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}ERM -- Datensicht: Fachkonzept \& DV-Konzept \& Implementierung}{17}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Modellierung des DV-Konzepts}{17}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Implementierungsebene}{17}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Merkmal der Objektorientierung}{17}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}Frage 3}{18}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Wozu dient UML?}{18}{subsubsection.4.4.1}
+\contentsline {section}{\numberline {5}Lerneinheit 5}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Lernziele}{19}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Frage 1}{19}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Frage 2}{19}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Geschäftsmodell}{19}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Elemente eines Geschäftsmodells}{19}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Geschäftsmodellinovation}{19}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Canvas Elemente}{20}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5} \textnormal {$e^3$} Value Method}{21}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Elemente}{21}{subsubsection.5.3.6}
+\contentsline {subsubsection}{\numberline {5.3.7}Service Blueprint}{21}{subsubsection.5.3.7}
+\contentsline {subsubsection}{\numberline {5.3.8}Linien und Ebenen im Service Blueprint}{21}{subsubsection.5.3.8}
+\contentsline {subsection}{\numberline {5.4}Frage 3}{21}{subsection.5.4}
+\contentsline {section}{\numberline {6}Lerneinheit 6}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}Lernziele}{22}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Frage 1}{22}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Enterprise Resource Planning (ERP)\FN@sf@gobble@opt {Zusammen mit einer zentralen Datenbasis verbunden}}{22}{subsubsection.6.2.1}
+\contentsline {subsection}{\numberline {6.3}Frage 2}{22}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Prozessmodell}{22}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Klassifikation der Führungsunterstützungssysteme}{22}{subsubsection.6.3.2}

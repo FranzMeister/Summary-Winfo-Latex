@@ -1,0 +1,132 @@
+\select@language {german}
+\contentsline {section}{Lerneinheit 1}{5}{section*.2}
+\contentsline {subsection}{Lernziele}{5}{section*.3}
+\contentsline {subsection}{Frage 1}{5}{section*.4}
+\contentsline {subsection}{Frage 2}{5}{section*.5}
+\contentsline {subsection}{Frage 3}{5}{section*.6}
+\contentsline {subsection}{Frage 4}{6}{section*.7}
+\contentsline {subsubsection}{Zeichen, Daten, Information und Wissen}{6}{section*.8}
+\contentsline {subsubsection}{Informationssystem}{6}{section*.9}
+\contentsline {subsubsection}{Information als Wirtschaftsgut}{6}{section*.10}
+\contentsline {subsubsection}{Informationslogistische Grundprinzip \texttt {MIEZO}}{6}{section*.11}
+\contentsline {subsection}{Frage 5}{7}{section*.12}
+\contentsline {subsubsection}{Systeme}{7}{section*.13}
+\contentsline {subsubsection}{Charakteristika / Eigenschaften}{7}{section*.14}
+\contentsline {subsubsection}{Grundfragen bei der Gestaltung von Informationssystem}{7}{section*.15}
+\contentsline {subsection}{Frage 6}{7}{section*.16}
+\contentsline {subsubsection}{Arten von Informationssytemen:}{7}{section*.17}
+\contentsline {section}{Lerneinheit 2}{8}{section*.18}
+\contentsline {subsection}{Lernziele}{8}{section*.19}
+\contentsline {subsection}{Frage 1}{8}{section*.20}
+\contentsline {subsubsection}{Technologie-Trends -- Gartner's Hype Cycle}{8}{section*.21}
+\contentsline {subsubsection}{Moore's Law}{8}{section*.22}
+\contentsline {subsubsection}{Web 2.0}{8}{section*.23}
+\contentsline {subsubsection}{Mobility \& Consumerization}{8}{section*.25}
+\contentsline {subsubsection}{Planbarkeit}{9}{section*.26}
+\contentsline {subsubsection}{Big Data \& Datenverf\"ugbarkeit}{9}{section*.27}
+\contentsline {subsubsection}{Cloud Computing}{9}{section*.28}
+\contentsline {subsection}{Frage 2}{9}{section*.29}
+\contentsline {subsubsection}{Digitalisierung}{9}{section*.30}
+\contentsline {subsubsection}{Plattform}{9}{section*.31}
+\contentsline {subsubsection}{Plattform\"okosystem}{9}{section*.32}
+\contentsline {subsubsection}{Zwei Perspektiven auf Plattform \"Okosysteme}{9}{section*.33}
+\contentsline {subsection}{Frage 3}{10}{section*.34}
+\contentsline {subsubsection}{Technik, Innovationen, Wettbewerb}{10}{section*.35}
+\contentsline {subsection}{Frage 4}{10}{section*.36}
+\contentsline {subsubsection}{Ver\"anderung der Rolle der IKT}{10}{section*.37}
+\contentsline {subsubsection}{Einfluss IKT auf Organisation:}{10}{section*.38}
+\contentsline {subsection}{Frage 5}{10}{section*.39}
+\contentsline {subsubsection}{Prozessorientierung als organisatorisches Paradigma}{10}{section*.40}
+\contentsline {section}{Lerneineit 3}{11}{section*.41}
+\contentsline {subsection}{Lernziele}{11}{section*.42}
+\contentsline {subsection}{Frage 1}{11}{section*.43}
+\contentsline {subsubsection}{Warum Modelle?}{11}{section*.44}
+\contentsline {subsubsection}{Elemente von Modellen}{11}{section*.45}
+\contentsline {subsubsection}{Schritte der Modellierung}{11}{section*.46}
+\contentsline {subsubsection}{Arten von Modellen}{12}{section*.47}
+\contentsline {subsubsection}{Aspekte der Modellierung}{12}{section*.48}
+\contentsline {subsection}{Frage 2}{12}{section*.49}
+\contentsline {subsubsection}{Referenz:}{12}{section*.50}
+\contentsline {subsubsection}{Ein Referenz-Informationsmodell ist ...}{12}{section*.51}
+\contentsline {subsubsection}{Vereinfacht/tldr:}{12}{section*.52}
+\contentsline {subsubsection}{Beschreibung:}{12}{section*.53}
+\contentsline {subsubsection}{Anforderungen}{13}{section*.54}
+\contentsline {subsubsection}{Vergleich Modell und Referenzmodell}{13}{section*.55}
+\contentsline {subsubsection}{Vor- und Nachteile}{13}{section*.56}
+\contentsline {subsubsection}{Metamodell}{13}{section*.57}
+\contentsline {subsubsection}{Ordnungsrahmen}{13}{section*.58}
+\contentsline {subsection}{Frage 3}{14}{section*.59}
+\contentsline {subsubsection}{Handels-H}{14}{section*.60}
+\contentsline {subsubsection}{CIM (Computer Integrated Manufacturing Model)}{14}{section*.61}
+\contentsline {subsubsection}{SCOR-Modell (Supply Chain Operations Reference Model)}{14}{section*.62}
+\contentsline {section}{Lerneinheit 4}{15}{section*.63}
+\contentsline {subsection}{Lernziele}{15}{section*.64}
+\contentsline {subsection}{Frage 1}{15}{section*.65}
+\contentsline {subsubsection}{ARIS (Haus)}{15}{section*.66}
+\contentsline {subsubsection}{Beschreibung der Sichten}{16}{section*.67}
+\contentsline {subsubsection}{Beschreibung der Schichten}{16}{section*.68}
+\contentsline {subsubsection}{EPK -- Steuerung: Fachkonzept}{16}{section*.69}
+\contentsline {subsection}{Frage 2}{17}{section*.70}
+\contentsline {subsubsection}{ERM -- Datensicht: Fachkonzept \& DV-Konzept \& Implementierung}{17}{section*.71}
+\contentsline {subsubsection}{Modellierung des DV-Konzepts}{17}{section*.72}
+\contentsline {subsubsection}{Implementierungsebene}{17}{section*.73}
+\contentsline {subsubsection}{Merkmal der Objektorientierung}{17}{section*.74}
+\contentsline {subsection}{Frage 3}{18}{section*.75}
+\contentsline {subsubsection}{Wozu dient UML?}{18}{section*.76}
+\contentsline {section}{Lerneinheit 5}{19}{section*.77}
+\contentsline {subsection}{Lernziele}{19}{section*.78}
+\contentsline {subsection}{Frage 1}{19}{section*.79}
+\contentsline {subsection}{Frage 2}{19}{section*.80}
+\contentsline {subsubsection}{Gesch\"aftsmodell}{19}{section*.81}
+\contentsline {subsubsection}{Elemente eines Gesch\"aftsmodells}{19}{section*.82}
+\contentsline {subsubsection}{Gesch\"aftsmodellinovation}{19}{section*.83}
+\contentsline {subsubsection}{Canvas Elemente}{20}{section*.84}
+\contentsline {subsubsection}{ \textnormal {$e^3$} Value Method}{21}{section*.85}
+\contentsline {subsubsection}{Elemente}{21}{section*.86}
+\contentsline {subsubsection}{Service Blueprint}{21}{section*.87}
+\contentsline {subsubsection}{Linien und Ebenen im Service Blueprint}{21}{section*.88}
+\contentsline {subsection}{Frage 3}{21}{section*.89}
+\contentsline {section}{Lerneinheit 6}{22}{section*.90}
+\contentsline {subsection}{Lernziele}{22}{section*.91}
+\contentsline {subsection}{Frage 1}{22}{section*.92}
+\contentsline {subsubsection}{Enterprise Resource Planning (ERP)\FN@sf@gobble@opt {Zusammen mit einer zentralen Datenbasis verbunden}}{22}{section*.93}
+\contentsline {subsection}{Frage 2}{22}{section*.94}
+\contentsline {subsubsection}{Prozessmodell}{22}{section*.95}
+\contentsline {subsubsection}{Klassifikation der F\"uhrungsunterst\"utzungssysteme}{22}{section*.96}
+\contentsline {subsubsection}{Ursachen zunehmender Informationsbedeutung}{23}{section*.97}
+\contentsline {subsubsection}{Business Intelligence}{23}{section*.98}
+\contentsline {section}{Lerneinheit 7}{24}{section*.99}
+\contentsline {subsection}{Lernziele}{24}{section*.100}
+\contentsline {subsection}{Frage 1}{24}{section*.101}
+\contentsline {subsubsection}{Supply Chain Management}{24}{section*.102}
+\contentsline {subsubsection}{Prinzipien der Materialversorgung}{24}{section*.103}
+\contentsline {subsection}{Frage 2}{24}{section*.104}
+\contentsline {subsubsection}{Electronic Business}{24}{section*.105}
+\contentsline {subsubsection}{Electronic Commerce}{24}{section*.106}
+\contentsline {subsubsection}{Electronic Business}{25}{section*.107}
+\contentsline {subsection}{Frage 3}{25}{section*.108}
+\contentsline {subsubsection}{Electronic Data Interchange (EDI)}{25}{section*.109}
+\contentsline {subsubsection}{Electronic Data Interchange For Adminsistration Commerce and Transport (EDIFACT)}{25}{section*.110}
+\contentsline {subsubsection}{Electronic Goverment}{25}{section*.111}
+\contentsline {subsection}{Frage 4}{25}{section*.112}
+\contentsline {subsubsection}{Electronic Goverment}{25}{section*.113}
+\contentsline {subsection}{Frage 5}{25}{section*.114}
+\contentsline {section}{Lerneinheit 8}{26}{section*.115}
+\contentsline {subsection}{Lernziele}{26}{section*.116}
+\contentsline {subsection}{Frage 1}{26}{section*.117}
+\contentsline {subsubsection}{Markt-ver\"anderungen (MRKPTW)}{26}{section*.118}
+\contentsline {subsubsection}{Regulatoren}{26}{section*.119}
+\contentsline {subsubsection}{Kundenstruktur}{26}{section*.120}
+\contentsline {subsubsection}{Produktkomplexit\"at}{26}{section*.121}
+\contentsline {subsubsection}{Technologie}{27}{section*.122}
+\contentsline {subsubsection}{Wettbewerbsf\"ahigkeit}{27}{section*.123}
+\contentsline {subsection}{Frage 2}{27}{section*.124}
+\contentsline {subsubsection}{Kerngesch\"aft und -prozesse einer Bank (\texttt {VATTUF)}}{27}{section*.125}
+\contentsline {subsubsection}{Vertriebspozesse}{27}{section*.126}
+\contentsline {subsubsection}{Ausf\"uhrung/Abwicklung}{27}{section*.127}
+\contentsline {subsubsection}{Transaktionsbezogene Prozesse}{27}{section*.128}
+\contentsline {subsubsection}{Transaktions\"ubergreifende Prozesse}{27}{section*.129}
+\contentsline {subsubsection}{Unterst\"utzungsprozesse}{27}{section*.130}
+\contentsline {subsubsection}{F\"uhrungspozesse}{27}{section*.131}
+\contentsline {subsection}{Frage 3}{27}{section*.132}
+\contentsline {subsection}{Frage 4}{27}{section*.133}
