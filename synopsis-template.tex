@@ -16,6 +16,9 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{makeidx}
+\usepackage{multirow}
+
+
 
 \usepackage[stable]{footmisc}
 
@@ -116,6 +119,7 @@ matrix,shapes.symbols}
 \subsection{Lernziele}
 \begin{enumerate}
 	%%there has to be a better to solve this italics thing
+	%%UPDATE: use \begin{itshape} but then also the numbering will the italics
 	\item \hyperref[le1-1]{\textit{Sie erkennen die Bedeutung der Wirtschaftsinformatik.}}
 	\item \hyperref[le1-2]{\textit{Sie kennen die Paradigmen und Teilgebiete der Wirtschaftsinformatik.}}
 	\item \hyperref[le1-3]{\textit{Sie erhalten Einblick in das Berufsfeld Wirtschaftsinformatik.}}
@@ -153,7 +157,8 @@ matrix,shapes.symbols}
 	%% SOURCE OF THIS SORCERY I JUST DO THE EDIT http://www.texample.net/tikz/examples/assignment-structure/
 	\subsubsection{Zeichen, Daten, Information und Wissen}
 	
-	\begin{center}
+	\begin{figure}[H]
+		\centering
 	\begin{tikzpicture}
 		[node distance=.8cm,
 		start chain=going above,]
@@ -173,7 +178,7 @@ matrix,shapes.symbols}
 	
 		\draw[tuborg, decoration={brace}] let \p1=(woop.north), \p2=(asym.south) in ($(2, \y1)$) -- ($(2, \y2)$) node[tubnode] {ZEICHENVORRAT};
 	\end{tikzpicture}
-	\end{center}
+	\end{figure}
 	
 	\hrulefill
 	
@@ -290,6 +295,7 @@ matrix,shapes.symbols}
 	
 	\hrulefill
 	
+	\label{web2}
 	\subsubsection{Web 2.0}
 	\begin{quote}
 		Das für eine Reihe \textbf{interaktiver} und \textbf{kollaborativer} Elemente des Internets, speziell des World Wide Web, verwendet wird. Dabei konsumiert der Nutzer nicht nur den Inhalt, er stellt als Prosument \textbf{selbst Inhalt zur Verfügung}.
@@ -297,7 +303,7 @@ matrix,shapes.symbols}
 	
 	%\appendix
 	
-	\part*{}
+	%part*{}
 	
 	\hrulefill
 	
@@ -339,17 +345,17 @@ matrix,shapes.symbols}
 	\label{le2-2}
 	\subsubsection{Digitalisierung}
 	\begin{quote}
-		...ist die Transformation analoger Werte in digigtaler Form. Mit der Absicht sie zu speichern und/oder verarbeiten.
+		\dots ist die Transformation analoger Werte in digigtaler Form. Mit der Absicht sie zu speichern und/oder verarbeiten.
 	\end{quote}
 	
 	\subsubsection{Plattform}
 	\begin{quote}
-		...beschreibt eine einheitliche Grundlage, auf der Anwendungssoftware ausgeführt und entwickelt werden können.
+		\dots beschreibt eine einheitliche Grundlage, auf der Anwendungssoftware ausgeführt und entwickelt werden können.
 	\end{quote}
 	
 	\subsubsection{Plattformökosystem}
 	\begin{quote}
-		...Plattform und alle Stakeholder die auf ihr interagieren.
+		\dots Plattform und alle Stakeholder die auf ihr interagieren.
 	\end{quote}
 	
 	\hrulefill
@@ -382,9 +388,8 @@ matrix,shapes.symbols}
 	
 	%heh fixed
 	\begin{tabularx}{\textwidth}{X|X|X}
-		\toprule
 		\textbf{Plattform} & \textbf{Technologie-orientiert} & \textbf{Markt-orientiert} \\
-		\midrule
+		\hline
 		\textbf{Zweck} & Mitgestaltung der Wertschöpfung, Innovation & Abgleich von Angebot und Nachfrage, Informationsaustausch \\
 		\midrule
 		\textbf{Anwendung} & Software -- Hardware & Marktplatz -- Community \\
@@ -472,6 +477,7 @@ matrix,shapes.symbols}
 	\end{itemize}
 	\hrulefill
 	
+	
 	\subsubsection{Schritte der Modellierung}
 	%\begin{tikzpicture}
 	%
@@ -486,34 +492,34 @@ matrix,shapes.symbols}
 	%	arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
 	%}
 	%\end{tikzpicture}
-	
-	\begin{tikzpicture}[
-	start chain = going right,
-	block/.style = {rectangle, draw, rounded corners, 
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[
+		start chain = going right,
+		block/.style = {rectangle, draw, rounded corners, 
 		text width=6em, align=center, minimum height=4em,
 		on chain},
-	every pin/.style = {inner sep=1mm, align=center, font=\footnotesize,
+		every pin/.style = {inner sep=1mm, align=center, font=\footnotesize,
 		pin distance=9mm, pin edge={angle 60-, solid, black}},
-	]
-	\node[block] (A) {Ausschnitt aus der Realität};
-	\node[block] (B) {Ist-Modell};
-	\node[block] (C) {Soll-Modell};
-	\node[block] (D) {Realität schaffen/ändern};
+		]
+		\node[block] (A) {Ausschnitt aus der Realität};
+		\node[block] (B) {Ist-Modell};
+		\node[block] (C) {Soll-Modell};
+		\node[block] (D) {Realität schaffen/ändern};
 	
-	\linespread{0.9}
-	\draw[-latex'] (A) to node[inner sep=0pt,
-	pin=above:aktive (Re-)konstruktion\\
-	Modellierung] {}    (B);
+		\linespread{0.9}
+		\draw[-latex'] (A) to node[inner sep=0pt,
+		pin=above:aktive (Re-)konstruktion\\
+		Modellierung] {}    (B);
 	
-	\draw[-latex'] (B) to node[inner sep=0pt,
-	pin=above:Fantasie] {}    (C);
+		\draw[-latex'] (B) to node[inner sep=0pt,
+		pin=above:Fantasie] {}    (C);
 	
-	\draw[-latex'] (C) to node[inner sep=0pt,
-	pin=above:Konstruktion] {}    (D);
-	\end{tikzpicture}
-	\\ \hrulefill
-	\pagebreak
-	
+		\draw[-latex'] (C) to node[inner sep=0pt,
+		pin=above:Konstruktion] {}    (D);
+		\end{tikzpicture}
+	\end{figure}
+	\hrulefill
 	\subsubsection{Arten von Modellen}
 	\begin{itemize}
 		\item \textbf{deskriptiv} (Abbild): Erklärungs-, Prognosemodelle
@@ -548,7 +554,7 @@ matrix,shapes.symbols}
 	\begin{quote}
 		auf etwas zurückführen, sich auf etwas beziehen, berichten.
 	\end{quote}
-	\subsubsection{Ein Referenz-Informationsmodell ist ...}
+	\subsubsection{Ein Referenz-Informationsmodell ist \dots}
 	\begin{itemize}
 		\item das \textbf{immaterielle Abbild}
 		\item der in einem \textbf{realen} oder \textbf{gedachten} betrieblichen \textbf{Objektsystem}
@@ -599,11 +605,10 @@ matrix,shapes.symbols}
 	%\\[1\normalbaselineskip]
 	\subsubsection{Vergleich Modell und Referenzmodell}
 	\begin{tabularx}{\textwidth}{X|X}
-		\toprule
 		%\multicolumn{2}{c}{\textbf{Modellvergleich}} \\[.5\normalbaselineskip]
 		%\multicolumn{2}{c}{Modell ist stets Modell:} \\
 		Modell & Referenzmodell \\
-		\midrule
+		\hline
 		\tabitem eine Abbildung eines Systems von Objekten & \tabitem für Wiederverwendung empfohlenes Modell \\
 		\tabitem bestimmten Zweck & \tabitem Modell das für Konstruktion weiterer Modelle genutzt wird \\
 		\tabitem konstruiert Abbildung realer Objekte für bestimmte Adressaten & \tabitem Konstruktion semantischer Gemeinsamkeiten in den Modellen \\
@@ -695,7 +700,7 @@ matrix,shapes.symbols}
 			%\multicolumn{2}{c}{Modell ist stets Modell:} \\
 			%\toprule
 			\textbf{Sicht} & \textbf{Inhalt} & \textbf{Beispiel} \\
-			\toprule
+			\hline
 			\textbf{Datensicht} & beschreibt Informationsobjekte zu Repräsentation von Ereignissen und Zuständen. Auftrag ist abgewickelt & Auftrag ist abgewickelt \\[4\normalbaselineskip]
 			\textbf{Funktionssicht} & beschreibt Funktionen und ihre Zusammenhänge in Form von Funktionsbäumen & (Teil)funktionen der Auftragsabwicklung \\[3\normalbaselineskip]
 			\textbf{Organisationssicht} & beschreibt Struktur und Beziehungen und Aufgabenträgern und Organisationseinheiten & Herr M. Abt. Auftragsannahme \\[3\normalbaselineskip]
@@ -711,7 +716,7 @@ matrix,shapes.symbols}
 		%\multicolumn{3}{c}{\textbf{Schichten}} \\[0.5\normalbaselineskip]
 		%\toprule
 		\textbf{Fachkonzept} & \textbf{DV-Konzept} & \textbf{Implementierung} \\
-		\toprule
+		\hline
 		\begin{itemize}[leftmargin=*]
 			\item Anforderungsanalyse
 			\item Darstellung fachlich-betriebswirtschaftlicher Sachverhalte
@@ -849,7 +854,7 @@ matrix,shapes.symbols}
 	\subsubsection{Geschäftsmodellinovation}
 	
 	\begin{quote}
-		...schafft neue Logik hinsichtlich wie das Unternehmen einen Wert schafft, indem es Änderungen an den obigen Fragen vornimmt.
+		\dots schafft neue Logik hinsichtlich wie das Unternehmen einen Wert schafft, indem es Änderungen an den obigen Fragen vornimmt.
 	\end{quote}
 	\bigskip
 	
@@ -1054,7 +1059,7 @@ matrix,shapes.symbols}
 			\multicolumn{4}{c}{\textbf{Kategorien von Electronic Business}} \\[1.0\normalbaselineskip]
 		 & \textbf{Consumer} & \textbf{Business} & \textbf{Administration} \\
 		%\\[1.0\normalbaselineskip]
-		\midrule
+		\hline
 		\textbf{Consumer} & C2C & C2B & C2A \\
 		\textbf{Business} & B2C & B2B & B2A \\
 		\textbf{Administration} & A2C & A2B & A2A \\
@@ -1112,7 +1117,7 @@ matrix,shapes.symbols}
 	\subsection{Frage 1}
 	\label{le8-1}
 	\begin{quote}
-		\textbf{Treiber der Transformation des Bankensektors sind...}
+		\textbf{Treiber der Transformation des Bankensektors sind \dots}
 	\end{quote}
 	\subsubsection{Markt-veränderungen (MRKPTW)}
 	\begin{itemize}
@@ -1177,23 +1182,411 @@ matrix,shapes.symbols}
 	\end{itemize}
 	
 	\subsubsection{Transaktionsbezogene Prozesse}
-	\subsubsection{Transaktionsübergreifende Prozesse}
-	\subsubsection{Unterstützungsprozesse}
-	\subsubsection{Führungspozesse}
-
-
-
+	\begin{itemize}
+		\item Überwachung 
+		\item Monitoring 
+		\item Bewirt. Transaktionen 
+		\item Behandlung Ausnahmen 
+	\end{itemize}
 	
+	\subsubsection{Transaktionsübergreifende Prozesse}
+	\begin{itemize}
+		\item Konto-/Depotführung 
+		\item Produktentwicklung 
+		\item Produktstammpflege 
+		\item Risikomanagement 
+		\item Interne Überwachung 
+		\item Kundenberichte 
+		\item Übergreifende fachliche Prozesse
+	\end{itemize}
+	
+	\subsubsection{Unterstützungsprozesse}
+	\begin{itemize}
+		\item Personalwesen 
+		\item Rechnungswesen
+		\item Dokumentenmanagement
+		\item Management Information 	
+		\item Legal Reporting
+		\item Beschaffung
+		\item Informatik
+		\item Sicherheit
+	\end{itemize}
+	
+	\subsubsection{Führungspozesse}
+	\begin{itemize}
+		\item Planung 
+		\item Steuerung 
+		\item Kontrolle
+	\end{itemize}
+
 	\subsection{Frage 3}
 	\label{le8-3}
+	\subsubsection{IT spielt dominante Rolle im Bankensektor}
+	\begin{quote}
+		Die Kernprozesse der Bank beschäftigen sich mit der Verarbeitung von Informationen.
+		Informationen und Informationsprozesse werden über IT abgebildet
+	\end{quote}
+	
+	\subsubsection{Ziele des IT-Einsatzes im Bankensektor}
+	\begin{itemize}
+		\item Senkung der \textbf{Bearbeitungs- und Durchlaufzeiten}
+		\item Reduzierung der \textbf{Nacharbeiten}
+		\item Reduzierung von \textbf{Qualitätsmängeln}
+		\item Reduzierung von \textbf{Schnittstellen}
+	\end{itemize}
+	
+	\subsubsection{Anforderungen an IT in Banken}
+	\begin{itemize}
+		\item Kundenservice
+		\item Geringe Kosten
+		\item Vereinfachung des Betriebs
+	\end{itemize}
 
 	
 	\subsection{Frage 4}
 	\label{le8-4}
-	
+	\subsubsection{Algorithmic Trading}
+	\begin{quote}
+		Automatisierter Handel von Wertpapieren mit Hilfe von Computerprogrammen
+	\end{quote}
 
+	\subsubsection{Core Banking Systeme (CBS)}
+	\begin{quote}
+		Core Banking System bezeichnet ein Computersystem, das die Kernprozesse einer Bank (Core Banking) unterstützt\\
+		\textbf{Beispiel:} IBM, Oracle
+	\end{quote}
 	
+	\subsubsection{E-Commerce Bazahlsysteme??? INHALT?}
+	\begin{quote}
+		content...
+	\end{quote}
+	
+	\pagebreak
 		
+	\section{Lerneinheit 9}
+	\subsection{Lernziele}
+%%	\begin{itshape}
+	\begin{enumerate}
+		\item \hyperref[le9-1]{\textit{Sie kennen grundlegende Einflüsse von Gruppen und Individuen auf die Analyse, das Design und die Implementierung von Social Software.}}
+		\item \hyperref[le9-2]{\textit{Sie kennen die Begriffe Social Computing, CSCW und Social Software und können sie an unterschiedlichen Beispielen abgrenzen und erläutern.}}
+		\item \hyperref[le9-3]{\textit{Sie wissen, was unter Web 2.0 zu verstehen ist und was die grundlegenden Unterschiede zum ?Web 1.0? sind.}}
+		\item \hyperref[le9-4]{\textit{Sie können zwischen Workflow und Workgroup Computing unterscheiden und für beide Einsatzfelder Beispiele nennen.}}
+	\end{enumerate}
+%%	\end{itshape}
+	
+	\subsection{Frage 1}
+	\label{le9-1}
+	\subsubsection{Gruppe}
+	ist eine Menge von Invdividuen die:
+	\begin{itemize}
+		\item gemeinsames Gruppenbewusstsein 
+		\item eine Gruppenstruktur
+		\item typisches Interaktionsverhalten
+		\item gemeinsame Normen und Werte
+	\end{itemize}
+	
+	\subsubsection{Einfluss der Gruppe auf das Verhalten des Einzelnen}
+	\begin{itemize}
+		\item Gruppengröße 
+		\item Gruppenstruktur 
+		\item Zusammensetzung der Gruppe 
+		\item Räumliche Positionierung von Mitgliedern 
+		\item Kommunikationsstruktur
+	\end{itemize}
+	
+	
+	\subsection{Frage 2}
+	\label{le9-2}
+	\subsubsection{Social Computing}
+	\begin{quote}
+		Anwendung von Computer Technologie um Zusammenarbeit und Interaktion zu vereinfachen
+	\end{quote}
+	
+	\subsubsection{Social Software}
+	\begin{quote}
+		Software Systeme, die menschliche Zusammenarbeit und Interaktion unterstützen
+	\end{quote}
+	
+	\subsubsection{Computer-Supported Cooperative Work (CSCW)}
+	\begin{quote}
+		rechnergestützte gemeinsame Aufgabenerfüllung durch eine Gruppe von Menschen
+	\end{quote}
+	
+	\subsection{Frage 3}
+	\label{le9-3}
+	\subsubsection{Web 1.0 vs. Web 2.0}
+	\begin{quote}
+		\textbf{Web 1.0:} besteht aus statischen Seiten und als Informationsangebot ohne Interaktionen \\
+		\hyperref[web2]{\textbf{Web 2.0:} Lerneinheit 2 Frage 1}
+	\end{quote}
+	
+	
+	\subsection{Frage 4}
+	\label{le9-4}
+	\subsubsection{Workgroup Computing}
+	\begin{quote}
+		Organisation und Verwaltung von gruppeninternen Informations- und Arbeitsprozessen
+	\end{quote}
+	
+	\subsubsection{Anwedungsfälle}
+	\begin{itemize}
+		\item Gemeinsames Bearbeiten von Material (Information Sharing) 
+		\item Kooperation innerhalb von Teams (Telekooperation) 
+		\item Treffen von Gruppenentscheidungen (Sitzungsunterstützung)
+	\end{itemize}
+	
+	\hrulefill
+	
+	\subsubsection{Workflowsysteme}
+	\begin{itemize}
+		\item Zusammenführung der Arbeiten Einzelner 
+		\item Behandlung strukturierbarrer, planbarer Abläufe
+	\end{itemize}
+	
+	\subsubsection{Ziele}
+	\begin{itemize}
+		\item Erhöhung der Transparenz über den Prozess
+		\item Parallelisierung von Arbeitsschritten
+		\item Termin-Einhaltung
+	\end{itemize}
+	
+	\subsubsection{Workflow vs. Workgroup Computing}
+	\begin{tabularx}{\textwidth}{X|X|X}
+		\toprule
+		& \textbf{Workflow Computing} & \textbf{Workgroup Computing} \\
+		\hline
+		\textbf{Anzahl der beteiligten} & hoch & niedrig \\[1.5\normalbaselineskip]
+		\textbf{Bedeutung organisatorischer Regeln} & hoch & niedrig \\[1.5\normalbaselineskip]
+		\textbf{Einbindung in Gesamtorganisation} & Ja & Bisher: gering \\[1.5\normalbaselineskip]
+		\textbf{Primäres Ziel (bisher)} & Effizienz & Flexibilität \\[1.5\normalbaselineskip]
+		\bottomrule
+		\end{tabularx}
+		
+		\pagebreak
+		
+		\section{Lerneinheit 10}
+		\subsection{Lernziele}
+		\begin{enumerate}
+			\item \hyperref[le10-1]{\textit{Sie kennen die Vor- und Nachteile von Standardsoftware und Individualsoftware.}}
+			\item \hyperref[le10-2]{\textit{Sie können eine einfache Kosten-Nutzenanalyse verschiedener Alternativen durchführen.}}
+			\item \hyperref[le10-3]{\textit{Sie kennen Phasenkonzepte, Prototyping, das V-Modell und agile Methoden im Überblick.}}
+		\end{enumerate}
+		
+		\subsection{Frage 1}
+%		\subsubsection{Standardsoftware vs. Individualsoftware}
+%		\begin{tabularx}{\textwidth}{l|X|X}
+%			%\toprule
+%			& \textbf{Standardsoftware} & \textbf{Individualsoftware} \\
+%			\midrule
+%			\textbf{Vorteile} & \tabitem Kosteneinsparungen gegenüber Eigenentwicklung, da sich mehrere Anwenderunternehmen sich den Entwicklungsaufwand teilen 
+%			
+%			\tabitem Verkürzung der Einführungszeiten, da die Software sofort verfügbar ist 
+%			
+%			\tabitem Hohe technische und fachliche Programmqualität aufgrund der größeren Erfahrung 
+%			
+%			\tabitem geringeres Risiko da die Software umfangreich getestet und erprobt & \\ 
+%			\midrule
+%			\textbf{Nachteile} & & \\
+%			\bottomrule
+%		\end{tabularx}
+		
+		\subsubsection{Vorteil Standardsoftware}
+		\begin{itemize}
+			\item Kosteneinsparungen gegenüber Eigenentwicklung, da sich mehrere \item Anwenderunternehmen sich den Entwicklungsaufwand teilen 
+			\item Verkürzung der Einführungszeiten, da die Software sofort verfügbar ist 
+			\item Hohe technische und fachliche Programmqualität aufgrund der größeren Erfahrung 
+			\item geringeres Risiko da die Software umfangreich getestet und erprobt
+		\end{itemize}
+		
+		\subsubsection{Nachteil Standardsoftware}
+		\begin{itemize}
+			\item technische und organisatorische Anforderungen des Unternehmens werden unter Umständen nicht umfassend abgedeckt 
+			\item Abhängigkeit von Hersteller der Software
+			\item Anwender und IT-Abteilung akzeptieren die Software nicht (not invented here syndrom)
+			\item Schnitstellenprobleme zu anderen Anwendungen, wenn die Standardsoftware nur für ein Anwendungsgebiet eingesetzt wird
+		\end{itemize}
+		
+		
+		
+		\label{le10-2}
+		\subsection{Frage 2}
+		\subsubsection{Kosten-Nutzen-Analyse}
+		
+		\label{le10-3}
+		\subsection{Frage 3}
+		\subsubsection{Nutzenkategorien von Anwendungssystemen}
+		\textbf{THIS SHIT LOOKS UGLY AF FIX THE CENTERING}
+		\begin{tabularx}{\linewidth}{X|X|X}
+			& \textbf{monetär bewertbar} & \textbf{nicht monetär bewertbar} \\
+			\textbf{quantifizierbarer Nutzen} & \begin{itemize}[leftmargin=*]\item Verkürzung von Bearbeitungszeiten \item Abbau von Überstunden\end{itemize} & \begin{itemize}[leftmargin=*]\item Schnellere Angebotsbearbeitung \item Weniger Terminüberschreitungen \item Höherer Servicegrad \item Weniger Kundenreklamationen
+			\end{itemize} \\
+			\hline
+			\textbf{nicht quantifizierbarer Nutzen} &  & \begin{itemize}[leftmargin=*] \item Erhöhung der Datenaktualität \item Verbesserte Informationen \item Gesteigertes Unternehmensimage \item Erweiterte Märkte und Geschäftsfelder
+			\end{itemize}
+		\end{tabularx}
+		
+		\subsubsection{Phasen zur Entwicklung von Individualsoftware}
+		\subsubsection{Wasserfallmodell}
+		\subsubsection{V-Modell}
+		\subsubsection{Prototyping}
+		
+		\subsubsection{Agile Softwareentwicklung}
+		\subsubsection{SCRUM}
+		\begin{itemize}
+			\item Vorgehensmodell, aber auch Grundüberzeugung und Philosophie 
+			\item Komplexe Entwicklungsprozesse nicht im Voraus exakt planbar 
+			\item Selbstorganisierendes Team
+			
+			%\begin{quote}
+				{\footnotesize Product Backlog $\rightarrow$ Spring Backlog $\rightarrow$ (Sprint 2-4w, Daily Scrum Meeting (24h) $\rightarrow$ Potentiell auslieferbare Produktrevision}
+			%\end{quote}
+		\end{itemize}
+		\subsubsection{Extreme Programming (XP)}
+		\begin{itemize}
+			\item Bei unklaren Anforderungen und häufigen Änderungen 
+			\item Blendet Planungsvorgänge aus 
+			\item Insbesondere für kleine Entwicklungsprojekte geeignet
+			\item Kommunikation im Vordergrund: Kunde ?- Entwickler 
+			\item Schnell erste Ergebnisse 
+			\item User Stories 
+			\item Pair Programming
+		\end{itemize}
+		
+	\pagebreak
+		
+	\section{Lerneinheit 11}
+	\subsection{Lernziele}
+	\begin{enumerate}
+		\item \hyperref[le11-1]{\textit{Sie kennen die verschiedenen Aufgaben im Informationsmanagement und können diese einordnen.}}
+		\item \hyperref[le11-2]{\textit{Sie kennen Alternativen der organisatorischen Verankerung des Informationsmanagements.}}
+		\item \hyperref[le11-3]{\textit{Sie kennen Outsourcing als grundlegende Entscheidung im Informationsmanagement.}}
+		\item \hyperref[le11-4]{\textit{Sie wissen, dass es einen Zusammenhang zwischen Unternehmensstrategie und -umsetzung, Organisation und IKT gibt.}}
+	\end{enumerate}
+	
+	
+	\label{le11-1}
+	\subsection{Frage 1}
+	\subsubsection{Informationsmanagement}
+	\begin{quote}
+		\dots hat die Aufgabe, den im Hinblick auf das Unternehmensziel bestmöglichen Einsatz der Ressource Information zu gewährleisten
+	\end{quote}
+	\subsubsection{Kernaufgaben}
+	\begin{itemize}
+		\item Management der Informationswirtschaft, der Informationssysteme und der Informations- und Kommunikationstechniken/-technologien eines Unternehmens 
+		\item Daneben beinhaltet das IM generelle Führungs- und Gestaltungsaufgaben
+	\end{itemize}
+	
+	\label{le11-2}
+	\subsection{Frage 2}		
+	\subsubsection{Einordnung der IM-Funktion in die Aufbauorganisation}
+	INSERT FIGURE HERE
+	
+	\label{le11-3}
+	\subsection{Frage 3}	
+	\subsubsection{Outsourcing}
+	\begin{quote}
+		Einzelne Aufgaben der IV oder die gesamten IV- Aufgaben werden an ein anderes Unternehmen abgegeben
+	\end{quote}
+	
+	\subsubsection{externes Outsourcing}
+	\begin{quote}
+		Auslagerung an ein externes Unternehmen
+	\end{quote}
+	
+	\subsubsection{internes Outsourcing}
+	\begin{quote}
+		Auslagerung an ein rechtlich verbundenes, anderes Unternehmen
+	\end{quote}
+	
+	\subsubsection{Gründe für Outsourcing}
+	\begin{itemize}
+		\item Kosten 
+		\item Personal
+		\item Risiko
+		\item Technik Know-How
+	\end{itemize}
+	
+	\subsubsection{Risiken des Outsourcing}
+	\begin{itemize}
+		\item Kosten 
+		\item Personal 
+		\item Technologie 
+		\item Datenschutz
+	\end{itemize}
+	
+	
+	\label{le11-4}	
+	\subsection{Frage 4}	
+	\subsubsection{Einfluss der IKT auf die Organisation: IKT als Enabler}
+	\begin{itemize}
+		\item Überführung unstrukturierter Abläufe in routinemäßige Abläufe
+		\item Beschleunigung wertschöpfender Aktivitäten
+		\item Ersatz und Reduktion menschlicher Arbeit 
+		\item Transport von Informationen mit großer Geschwindigkeit über große Entfernungen 
+		\item IKT kann große Menge von Informationen in Abläufen verfügbar machen 
+		\item Verfolgung von Input, Output und Status
+	\end{itemize}
+	\hrulefill
+	\subsubsection{Produktivitätsparadoxon}
+	\begin{quote}
+		Das Produktivitätsparadoxon besagt, dass kein positiver Zusammenhang zwischen IT-Investitionen und der Produktivität auf volkswirtschaftlicher oder betrieblicher Ebene besteht
+	\end{quote}
+	
+	\pagebreak
+	
+	\section{Gastvortrag -- SupplyOn}
+	\subsection{zu der Firma}
+	\begin{itemize}
+		\item Elektronische Plattform zur Kommunikation mit Unternehmenspartner (\textbf{Unternehmensübergreifend})
+		\item Datenaustausch über Web-Standardschnittstelle
+	\end{itemize}
+	
+	\subsubsection{Warum ist SCM eine komplexe Aufgabe}
+	\begin{itemize}
+		\item Märkte und Marktanforderungen ändern sich ständig 
+		\item Gesetzliche Vorgaben 
+		\item Stetig zunehmender Kostendruck 
+		\item Fortwährende Globalisierung
+	\end{itemize}
+	
+	\hrulefill
+	
+	\subsubsection{Was ist zu synchronisieren?}
+	\begin{itemize}
+		\item Absatz
+		\item Produktion 
+		\item Bestände 
+		\item Transporte 
+		\item Kapazitäten
+	\end{itemize}
+	
+	\hrulefill
+	
+	\subsubsection{Was sind Voraussetzungen für effektives SCM unter den gestiegenen Anforderungen einer globaleren Wirtschaft}
+	\begin{itemize}
+		\item Digitalisierung der globalen Supply Chain-Prozesse 
+		\item weniger manuelle Tätigkeiten 
+		\item Transparenz wichtig, dient zur Vermeidung von Engpässen und Unterdeckungen
+	\end{itemize}
+	
+	\hrulefill
+	
+	\subsubsection{Industrie 4.0}
+	\begin{itemize}
+		\item Die industrielle Produktion mit moderner Informations- und Kommunikationstechnik verzahnen 
+		\item intelligente und digital vernetzte Systeme
+	\end{itemize}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	% ============================================================================
 	% === REFERENCES =============================================================
 	% ============================================================================
